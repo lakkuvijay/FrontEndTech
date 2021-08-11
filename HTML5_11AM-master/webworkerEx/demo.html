@@ -1,0 +1,11 @@
+<script>
+    if(window.Worker){
+        let newThread = new Worker("demo.js");
+        newThread.postMessage({"num1":10,"num2":20});
+        newThread.onmessage = function(e){
+            console.log(e.data);
+        }
+    }else{
+        console.log("web worker not supported");
+    }
+</script>

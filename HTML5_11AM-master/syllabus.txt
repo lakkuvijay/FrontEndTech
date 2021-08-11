@@ -1,0 +1,107 @@
+1) storages
+
+        => local storage
+
+        => session storage
+
+
+2) web worker
+
+
+3) web socket
+
+
+4) audio & video
+
+
+5) Schemantic Elements
+
+        => details
+
+        => summary
+
+
+6) SVG & Canvas
+
+
+
+websocket
+=========
+        websocket api used to implement the chat applications
+
+        to implement chat application "nodejs" is the preferred language.
+
+
+1) create the directory
+
+        Ex.
+                websocket
+
+
+2) switch to websocket directory
+
+        > cd websocket
+
+
+3) download the websocket library/module
+
+        websocket is the 3rd party module, used to implement the chat applications.
+
+        websocket module, we will download by using "yarn" tool
+
+        > npm install -g yarn
+
+        > yarn add websocket --save
+
+
+4) create the chat server
+
+        server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

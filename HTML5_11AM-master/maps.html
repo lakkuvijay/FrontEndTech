@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Maps</title>
+    </head>
+    <body>
+        <p id="my_paragraph"></p>
+        <br><br>
+        <button onclick="myFun()">Click Me</button>
+    </body>
+    <script>
+        // function myFun(){
+        //     if(navigator.geolocation){
+        //         navigator.geolocation.getCurrentPosition(function fun_one(res){
+        //             document.getElementById("my_paragraph").innerHTML = `Longitude...${res.coords.longitude}    Latitude....${res.coords.latitude}`;
+        //         },function fun_two(err){
+        //             console.log(err);
+        //         },{timeout:60000});
+        //     }else{
+        //         console.log("browser not supported");
+        //     }
+        // }
+
+        function myFun(){
+            if(navigator.geolocation){
+               loc = navigator.geolocation;
+               watchID = loc.watchPosition(function fun_one(res){
+                    document.getElementById("my_paragraph").innerHTML+= res.coords.longitude+"  "+res.coords.latitude+"     "+res.timestamp;
+               },function fun_two(err){
+                    console.log(err);
+               },{timeout:60000});
+            }else{
+                console.log("browser not supported");
+            }
+        }
+
+
+
+
+    </script>
+</html>

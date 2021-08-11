@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cookies Example</title>
+    </head>
+    <body>
+        <button onclick="setCookies()">Set Cookie</button>
+        <button onclick="getCokkies()">Get Cookie</button>
+    </body>
+    <script>
+        function setCookies(){
+            document.cookie = "key1=Hello_1";
+            var d = new Date();
+            d.setTime(d.getTime()+30000);
+            document.cookie = "key2=Hello_2; expires="+d.toUTCString();
+        }
+
+        function getCokkies(){
+            console.log( document.cookie );
+        }
+    </script>
+</html>

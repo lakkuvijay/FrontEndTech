@@ -1,0 +1,1192 @@
+Day-1
+=====
+Introduction to ReactJS
+
+    - what is ReactJS
+
+    - installation of ReactJS
+
+    - Virtual DOM
+
+    - Differences Between Angular, React and VueJS
+
+
+=> React is the JS Library.
+
+=> React Given by Facebook.
+
+=> Current Version of ReactJS is "17.X"
+
+=> React Categorized into 3 Subjects.
+
+        1) ReactJS
+
+        2) React Native
+
+        3) React BootStrap
+
+=> ReactJS used to build the web applications.
+
+=> React Native, Used to build the Hybrid Mobile applications.
+
+=> React BootStrap, used to apply the Rich UI to both web applications and mobile applications.
+
+=> we will build ReactJS applications in two ways.
+
+        1) JSX
+
+        2) TSX
+
+=> JSX Stands for JavaScript + XML.
+
+=> JavaScript won't follows the OOPS.
+
+=> TSX Stands for TypeScript + XML.
+
+=> TypeScript is the Programming Language.
+
+=> TypeScript Given by Microsoft.
+
+=> TypeScript follows the OOPS Features.
+
+=> applications of ReactJS
+            whatsapp
+
+            Netflix
+
+            Yahoo Mail
+
+            ----
+            ----
+            ----
+
+Installation of ReactJS
+------------------------
+
+1) download and install NodeJS.
+
+    NodeJS, contain following tools.
+
+            => npm
+
+            => node
+
+            => npx
+
+            ----
+            ----
+            ----
+
+    npm Stands for Node Packaging Manager.
+
+    npm helps to install "reactjs".
+
+    node tool, helps to execute "JavaScript".
+
+    npx stands for "node pckaging runner".
+
+    npx helps to create the environment, to build react applications
+
+website : https://nodejs.org/en/download/
+
+file    : node-v14.17.1-x64.msi
+
+
+2) install yarn.
+
+    yarn tool given by "Facebook".
+
+    yarn tool, used to download the "3rd" party Libraries.
+
+    we will install yarn tool by using following command.
+
+
+    > npm install -g yarn
+
+    -g stands for global installation.
+
+
+3) install create-react-app
+
+    "create-react-app" is the tool provided by "Facebook".
+
+   "create-react-app" tool used to create the "react applications"
+
+    we will install create-react-app tool, by using following command.
+
+    > npm install -g create-react-app
+
+
+4) install visual studio code
+
+    - Visual Studio Code is the IDE, given by Microsoft.
+
+    - Visual Studio Code also called as VSCode.
+
+    - VSCode is the Open Source IDE.
+
+    - VSCode used to build the Angular,ReactJS,VueJS,NodeJS,........
+
+website : https://code.visualstudio.com/docs/?dv=win
+
+file    : VSCodeUserSetup-x64-1.57.0.exe
+
+
+Day-2
+=====
+Virtual DOM
+
+ - React follows the Virtual DOM.
+
+ - Because of Virtual DOM, React is faster compared to other frameworks.
+
+ - DOM Stands for Document Object Model.
+
+ - when ever HTML Loaded into Browser Engine, automatically Browser Engine Will create Real  DOM.
+
+ - React Never works on Real DOM Directly.
+
+ - Real  DOM Operations Costlier Operations.
+
+ - React, will create exactly two Virtual Copies of Real DOM.
+
+ - when ever change detected, immidiately Virtual DOM1, will identifies the changes.
+
+ - Virtual DOM1 will compare with Virtual DOM2.
+
+ - if any mismatches happens between Virtual DOM1 & Virtual DOM2, automatically Virtual DOM1 will provide following information to Real DOM.
+
+    1) Address of Node Element
+
+    2) Element
+
+    3) Old Value
+
+    4) New Value
+
+
+ - Real DOM will navigate to particular element based on above information and will do the changes in main DOM.
+
+
+
+
+create and execute react application
+====================================
+step 1.
+    create the react application
+
+    > npx create-react-app first-app --template typescript
+
+    - npx stands for node packaging runner.
+
+    - where "first-app" is the name of the react application
+
+
+step 2.
+    switch to react application
+
+    > cd first-app
+
+
+step 3.
+    execute the react application
+
+    > yarn start / npm start
+
+    The Default Port Number React Application is 3000.
+
+
+Differences Between Angular Framework and React Library
+=======================================================
+
+            Angular                                     React
+
+    Angular Released By Google                      React Released By Facebook
+
+    Current Version of Angular is Angular12         Current Version of ReactJS is React 18.X
+
+    Angular is the Framework                        ReactJS is the library
+
+    Angular is the Real DOM                         React is the Virtual DOM
+
+    Angular have less performance compared          React have good performance compared to 
+    to React.                                       Angular.
+
+
+    Angular containes Rich Features                 React won't containes Rich Features
+
+    Angular Supports the two way data binding       React Supports the one way data binding
+
+    Application of Angular:                         Application of ReactJS:
+        Gmail                                           whatsapp
+        Paypal                                          Netflix
+        ===                                                 ---
+                                                            ----
+        ===
+
+    we will build Angular Application               We will build React Applications
+    with the help of TypeScript                     with the help of either
+                                                        1) JSX
+                                                        2) TSX
+
+
+component
+=========
+    Reusable portion of complex UI Called as "Component".
+
+    As a React Developer, we can create more than "one" component.
+
+    As a Developer, we can "reuse" these components.
+
+
+*****************************************
+component-app
+            src
+              First.tsx
+
+              index.tsx
+
+            public
+                index.html
+*****************************************
+
+
+
+********************************************************
+components-app
+             src
+               Header.tsx
+               Body.tsx
+               Footer.tsx
+
+               index.tsx
+
+             public
+                index.html
+*******************************************************
+
+
+************************************************************
+state-app
+        src
+          State.tsx
+
+          index.tsx
+************************************************************
+
+MERN Stack Development
+----------------------
+
+M - MongoDB
+
+E - ExpressJS
+
+R - ReactJS
+
+N - NodeJS
+
+MongoDB
+=======
+    - MongoDB Database is NoSQL Database.
+
+    - MongoDB Database supports "JSON".
+
+    - MongoDB Database is light weight Database.
+
+    - MongoDB Database supports cloud environment in the form of a "MongoDB Atlas".
+
+
+SQL                                                     NoSQL
+=========================================================================================
+
+Oracle, MySQL, SQLServer                            MongoDB, CassandraDB,.....
+
+
+Databases                                           Databases
+
+
+Tables                                              Collections
+
+
+records                                             documents
+
+
+primary Key                                         _id
+==========================================================================================
+
+Database Details
+----------------
+Database Name : rjs-6pm
+
+Collection Name : user_details
+
+user name       :   admin
+
+password :  admin
+
+connection url : mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/rjs-6pm?retryWrites=true&w=majority
+
+
+Implement the backend
+---------------------
+    we will use NodeJS as Backend Technology.
+
+
+=> create the directory
+
+    Ex.
+        server
+
+=> switch to server directory
+
+    > cd server
+
+
+=> download the Libraries by using yarn tool
+
+        1) express
+
+        2) cors
+
+        3) mongodb
+
+        4) dotenv
+
+        > yarn add express cors mongodb dotenv --save
+
+=> create the server
+
+        server.js
+
+
+=> start the server
+
+    > node server
+
+=> test the rest api
+
+    Postman
+
+
+
+--------------------------------------
+1) create the react application
+
+    > npx create-react-app mern-app --template typescript
+
+
+2) switch to react application
+
+    > cd mern-app
+
+
+3) download following Libraries
+
+    1) axios
+
+    2) dotenv
+
+
+        > yarn add axios dotenv --save
+
+
+4) create the Component
+
+        App.tsx
+
+
+
+Backend Deployment
+==================
+
+1) create the repository
+
+
+
+2) create the application in aws account
+
+
+3) create the CI/CD process
+
+
+
+
+=========================================================================================
+MERN Stack Development
+
+M - MongoDB
+
+E - ExpressJS
+
+R - ReactJS
+
+N - NodeJS
+
+
+step 1.
+    deploy the images in s3 bucket
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p1.jpg
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p2.jpg
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p3.jpg
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p4.jpg
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p5.jpg
+
+        https://mernapp.s3.us-east-2.amazonaws.com/p6.jpg
+
+
+2) make the Database ready
+
+        Database name   :   ecommerce
+
+        Collection Name  : products
+
+        connection url : mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/ecommerce?retryWrites=true&w=majority
+
+
+
+3) create the server directory
+
+    Ex.
+          mern_server
+
+
+4) switch to mern_server
+
+    > cd mern_server
+
+
+5) download the node modules
+
+       => express
+
+       => mongodb
+
+       => cors
+
+        - express framework used to develop the rest services
+
+                Ex.
+                        GET
+                        POST
+                        PUT
+                        DELETE
+
+        - mongodb module used to connect to mongodb Database.
+
+        - cors module used to enable the ports communication.
+
+        > yarn add express mongodb cors --save
+
+
+6) develop rest api by using nodejs
+
+    server.js
+
+
+7) start the node server
+
+    > node server
+
+
+8) test the rest api by using Postman
+
+    => http://localhost:1234/products
+
+9) create the react application
+
+    > npx create-react-app mern-frontend 
+
+10) swtch to react application
+
+    > cd mern-frontend
+
+
+11) download the axios library
+
+    > yarn add axios --save
+
+
+12) push the server code github
+
+
+13) create application in AWS
+
+        ElasticBeanStalk
+
+
+14) create the CI/CD Process
+
+        CodePipeline
+
+
+15) configure the cloud url to react application
+
+        => http://mernserver-env.eba-dhqkdnmp.us-east-2.elasticbeanstalk.com/products
+
+
+16) download and install aws cli
+
+        website : https://aws.amazon.com/cli/
+
+        file    : AWSCLIV2.msi
+
+
+17) prepare the production build
+
+    > npm run build
+
+
+18) push production build to s3 bucket
+
+    => http://mernappex.s3-website.us-east-2.amazonaws.com
+
+    bucket policies
+
+    {
+        "Version": "2012-10-17",
+        "Statement": [
+            {
+                "Sid": "PublicReadGetObject",
+                "Effect": "Allow",
+                "Principal": "*",
+                "Action": "s3:GetObject",
+                "Resource": "arn:aws:s3:::deploy-app-ashokit/*"
+            }
+        ]
+    }
+
+
+19) create the user credentials
+
+    IAM
+
+20) edit the package.JSON
+
+    "deploy": "aws s3 cp --recursive ./build s3://mernappex"
+
+21) execute the following commands
+
+        > aws configure
+
+        > npm run build
+
+        > npm run deploy
+
+
+------------------------------------------------------
+State Management
+
+=> create the directory
+
+    Ex.
+        redux-ex
+
+=> switch to redux-ex
+
+    > cd redux-ex
+
+
+=> download the redux library
+
+    > yarn add redux --save
+
+
+=> prepare the redux application
+
+    => bank.js
+
+
+
+                                    Rest API Call with Middleware
+
+1) create the database
+
+    database details
+    ****************
+
+    database name : RJS-06
+
+    collection name : products
+
+    connection url : mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/RJS-06?retryWrites=true&w=majority
+
+
+2) create the backend folder
+
+
+3) switch to backend folder
+
+    > cd backend
+
+
+4) download the node modules
+
+    => express
+
+    => dotenv
+
+    => mongodb
+
+    => cors
+
+    > yarn add express dotenv mongodb cors --save
+
+5) create the .env file
+
+6) create the rest api
+
+    server.js
+
+7) start the node server
+
+    > node server
+
+8) test the following rest api call
+
+    > http://localhost:8080/products
+
+
+9) create the react application
+
+    > npx create-react-app thunk-ex --template typescript
+
+
+10) switch to react application
+
+    > cd thunk-ex
+
+
+11) download the libraries
+
+    => redux      @types/redux 
+
+    => react-redux  @types/react-redux
+
+    => redux-thunk   @types/redux-thunk
+
+    => axios        @types/axios
+
+
+    > yarn add redux @types/redux react-redux @types/react-redux redux-thunk @types/redux-thunk axios @types/axios --save
+
+
+12) Implement the thunk middleware
+
+        => model
+
+        => types
+
+        => actions
+
+        => reducer
+
+        => store
+
+        => component
+
+*************************************************
+thunk-ex
+       src
+          model
+            Product.tsx
+************************************************* 
+    finally "Product" model is ready     
+
+
+***************************************************
+thunk-ex
+       src
+         types  
+           ProductActions.tsx
+***************************************************
+
+    finally "ProductsActionTypes" is ready with
+
+    1) ProductsLoading
+
+    2) ProductsLoadingSuccess
+
+    3) ProductsLoadingFail
+
+    4) ProductsActionTypes
+
+
+********************************************************
+thunk-ex
+        src
+           actions
+                ProductsActionImplementation.tsx
+********************************************************
+
+    finally "ProductsActions" ready.
+
+
+********************************************************
+thunk-ex
+       src
+         reducer
+            ProductsReducer.tsx
+********************************************************
+
+    finally "productReducer" is ready.
+
+
+
+*******************************************************
+thunk-ex
+       src
+         index.tsx
+*******************************************************
+
+
+***********************************************************
+thunk-ex
+       src
+         App.tsx
+***********************************************************
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

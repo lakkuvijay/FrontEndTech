@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Z-INDEX</title>
+        <style>
+            .a,.b,.c,.d{
+                width: 100px;
+                height: 100px;
+                color: white;
+            }
+            .a{
+                background-color: red;
+                margin-top: 20px;
+            }
+            .b{
+                background-color: green;
+                position: absolute;
+                top: 0;
+                left: 20px;
+                z-index: -1;
+            }
+            .c{
+                background-color: blue;
+                position: absolute;
+                top: 0;
+                left: 30px;
+                z-index: -2;
+            }
+            .d{
+                background-color: chocolate;
+                position: absolute;
+                top: 0;
+                left:40px;
+                z-index: -3;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="a">a</div>
+        <div class="b">b</div>
+        <div class="c">c</div>
+        <div class="d">d</div>
+    </body>
+</html>

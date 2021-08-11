@@ -1,0 +1,61 @@
+<!--
+
+    a --- first
+
+    b --- second
+
+    c  --- third
+
+    d --- fourth
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .a,.b,.c,.d{
+                width: 100px;
+                height: 100px;
+            }
+
+            .b,.c,.d{
+                top: 0px;
+            }
+
+            .a{
+                background-color: red;
+            }
+
+            .b{
+                background-color: green;
+                position: absolute;
+                left:30px;
+                z-index: -3;
+            }
+
+            .c{
+                background-color: blue;
+                position: absolute;
+                left: 40px;
+                z-index: -2;
+            }
+
+            .d{
+                background-color: yellow;
+                position: absolute;
+                left: 50px;
+                z-index: -1;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="a">a</div>
+
+        <div class="b">b</div>
+
+        <div class="c">c</div>
+
+        <div class="d">d</div>
+    </body>
+</html>

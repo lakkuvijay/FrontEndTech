@@ -1,0 +1,18 @@
+<div id="msgs"></div>
+<script>
+    let socket = new WebSocket("ws://localhost:8080");
+
+    socket.onopen = function(){
+        socket.send("welcome to 11am batch");
+    };
+
+    socket.onmessage = function(msg){
+        document.getElementById("msgs").innerHTML+=msg.data+"<br>";
+    }   
+
+    socket.onerror = function(err){
+        console.log("Error");
+    }
+
+
+</script>

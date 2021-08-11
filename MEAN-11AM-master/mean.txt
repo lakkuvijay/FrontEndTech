@@ -1,0 +1,612 @@
+MEAN Stack Development
+----------------------
+
+1) MongoDB
+
+	Cloud MongoDB DataBase
+
+	MongoDB Atlas
+
+
+2) ExpressJS
+
+
+3) Angular11
+	Network Calls / Asynchronous Calls / Http Calls
+	NgRx State Management
+
+
+4) NodeJS
+
+
+5) MiniProject
+
+
+6) Cloud Deployment
+
+	AWS(Amazon Web Services) Deployment
+					Angular11
+					---------
+
+
+	- Angular is Framework.
+
+	- Angular Given by google.
+
+	- Angular categorized into 3 flavours.
+
+		1) AngularJS
+
+		2) Angular2
+
+		3) Angular Material
+
+	- AngularJS used to develop the web applications with the help of JavaScript.
+
+
+	- Angular2 used to develop the web applications and mobile application with the help of 
+	  TypeScript
+
+
+	- Angular2 Advanced version is Angular11
+
+	- TypeScript is the Programming Language given by Microsoft and follows the OOPS.
+
+	- Angular Material, used to apply the Rich UI to both web applications and mobile applications.
+
+	- Angular11 installation depending on npm tool.	
+
+	- npm stands for node packaging manager.
+
+	- npm present in NodeJS.
+	
+	- yarn is the 3rd party tool, provided by facebook used to download the 3rd party libraries.
+
+	- Visual Studio Code is the Suggestable IDE to build the Angular11 Applications.
+
+	- VSCode Given by Microsoft and open source IDE.
+
+
+Installation of Angular11
+-------------------------
+1) install NodeJS
+
+	NodeJS containes following tools.
+
+		1) npm
+
+		2) node
+
+		3) npx
+
+		---
+		---
+		---
+	npm stands for node pckaging manager
+
+	npm helps to install Angular,React,VueJS,CoffeeScript,.......
+
+	node tool, helps to execute the JavaScript.
+
+	npx stands for node packaging runner.
+
+	npx helps to create the react projects
+
+website : https://nodejs.org/en/
+
+file    : node-v16.1.0-x64.msi
+
+
+	msi stands for microsoft installer
+
+
+
+2) install yarn tool
+
+	yarn is the tool, provided by facebook
+
+	yarn tool, used to download the 3rd party libraries
+
+	we will install yarn tool by using following command
+
+
+	> npm install -g yarn
+
+	"-g" stands for global installation
+
+
+3) install Angular11
+
+	Angular11 also command based installation.
+
+	
+	> npm install -g @angular/cli
+
+
+	cli stands for command line interface
+
+	cli helps to create the angular applications in faster manner
+
+
+4) link the yarn tool to cli tool
+
+
+	> ng config -g cli.packageManager yarn
+
+	where "M" is the capital in "packageManager"
+
+
+5) install Visual Studio Code
+
+
+	website : https://code.visualstudio.com/docs/?dv=win
+
+	file    : VSCodeUserSetup-x64-1.56.0.exe
+
+
+
+Steps to create the First Angular Application
+---------------------------------------------
+1) create the directory
+
+	Ex.
+		MEAN@11AM    (open with the help of VSCode)
+
+
+
+2) create the angular application
+
+	> ng new firstApp
+
+	where "firstApp" is the name of the angular application.
+
+
+3) switch to angular application
+
+	> cd firstApp
+
+
+4) execute the angular application
+
+	> ng s -o
+
+	"s" stands for "serve"
+
+	"-o" stands for "open" the default browser.
+
+	The default port number of angular application is "4200"
+
+
+								Component
+
+	- simple typescript class behaves like component.
+
+	- Each Reusable Portion of complex UI called as Component.
+
+	- As a Angular developer, we can provide communication between one component to another component.
+
+
+**************************************
+firstApp
+	   src
+	     app
+		   first.component.ts
+		   first.component.html
+
+		   app.module.ts
+		 index.html
+***************************************
+
+	- "first.component.ts" file used to create the component.
+
+	- "first.component.html" file used to display the component output.
+
+	- "app.module.ts" file is the registration file.
+
+	- in registration file we will register components.
+
+	- "index.html" file is the main html file.
+
+	- angular starts the execution from "index.html" file.
+
+
+										***** Services *****
+
+	- services are used to share the common business logic to multiple components
+
+	- providing communication between service to components called as dependency injection.
+
+******************************************
+serviceApp
+	    src
+		  app
+		   services
+		     my.service.ts
+		   components
+		   	 first.component.ts
+			 first.component.html
+
+			 second.component.ts
+			 second.component.html
+
+		  app.module.ts
+		index.html
+*******************************************	 
+
+
+							Rest API Calls
+
+Step 1.
+	create the angular application
+
+		> ng new countriesApp
+
+			where "countriesApp" is the name of the angular application
+
+Step 2.
+	switch to angular application
+
+	> cd countriesApp
+
+Step 3.
+	create the service
+
+	*********************************************
+	countriesApp
+			  src
+			    app
+				  countries.service.ts
+	********************************************
+
+		finally countriesService is ready with getCountries() function
+
+
+Step 4.
+	create the component
+
+	************************************************
+	countriesApp
+		       src
+			     app
+				   countries.component.ts
+				   countries.component.html
+
+
+				   app.module.ts
+	************************************************
+
+
+
+
+									***** Single Page Applications *****
+
+	- loading one component to another component without refreshing the whole webpage called as single page application.
+
+	- movement of one component to another component in single page application called as "Routing".
+
+	- "RouterModule" is the predefined module, used to implement the "Routing" in Single Page Application.
+
+
+steps to implement the single page application
+----------------------------------------------
+step 1.
+	create the angular application
+
+	where "spa-app" is the name of the angular application
+
+step 2.
+	switch to angular application
+
+	> cd spa-app
+
+
+step 3.
+	create the components
+
+	***********************************************
+	spa-app
+	      src
+		    app
+			  main.component.ts
+			  main.component.html
+
+			  mean.component.ts
+			  mean.component.html
+
+			  mern.component.ts
+			  mern.component.html
+
+			  mevn.component.ts
+			  mevn.component.html
+
+			  app.module.ts
+			index.html
+	*************************************************
+
+	where "mainComponent" is the master component.
+
+	where "meanComponent", "mernComponent" and "mevnComponent" are child components. 
+
+
+
+
+										MEAN STACK PROJECT
+
+M - MongoDB
+
+E - ExpressJS
+
+A - Angular
+
+N - NodeJS
+
+
+step 1.
+	deploy the images to s3 bucket
+
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p1.jpg
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p2.jpg
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p3.jpg
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p4.jpg
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p5.jpg
+
+	=> https://meanproj.s3.ap-south-1.amazonaws.com/p6.jpg
+
+
+Step 2.
+
+	DataBase Name  :  mean
+
+	Collection Name : products
+
+	user name : admin
+
+	password 	:	admin
+
+	connection url : mongodb+srv://admin:admin@cluster0.jgnmk.mongodb.net/mean?retryWrites=true&w=majority
+
+
+Step 3.
+	develop the rest api by using NodeJS
+
+	=> create the directory
+
+		Ex.
+			server
+
+	=> switch to server directory
+
+		Ex.
+			> cd server
+
+
+step 4.	
+	download the node modules
+
+	=> express
+
+	=> mongoose
+
+	=> body-parser
+
+	=> cors
+
+	> yarn add express mongoose body-parser cors --save
+
+
+step 5.
+	develop the node server
+
+	server.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

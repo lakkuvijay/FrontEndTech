@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Z-Index</title>
+        <style>
+            .ng,.rjs,.vjs,.mdb,.njs{
+                width: 100px;
+                height: 100px;
+                color: whitesmoke;
+            }
+            .rjs,.vjs,.mdb,.njs{
+                top:0;
+            }
+            .ng{
+                background-color: violet;
+            }
+            .rjs{
+                background-color: tomato;
+                position: absolute;
+                left: 25px;
+                z-index: 1;
+            }
+            .vjs{
+                background-color: yellowgreen;
+                position: absolute;
+                left: 50px;
+            }
+            .mdb{
+                background-color: turquoise;
+                position: absolute;
+                left: 75px;
+            }
+            .njs{
+                background-color: brown;
+                position: absolute;
+                left:100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="ng">NG</div>
+        <div class="rjs">RJS</div>
+        <div class="vjs">VJS</div>
+        <div class="mdb">MDB</div>
+        <div class="njs">NJS</div>
+    </body>
+</html>
